@@ -1,0 +1,167 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.search{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchTop{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding: 0.5rem;
+  height: 60rpx;
+}
+.inputSelect{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+.selectBox{
+  background-color: #EDEDED;
+  width: 25%;
+  height: 100%;
+  position: relative;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius:2rem;
+}
+.select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.selectText{
+  font-size: 30rpx;
+  flex: 1;
+}
+.optionBox{
+  position: relative;
+  top: 30rpx;
+  background-color:#4D4D4D;
+  color:rgba(0,0,0, 0);
+  border-radius: 10px;
+  border: 1px solid #4D4D4D;
+}
+.optionBox:after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 15px solid;
+  border-bottom-color: #4D4D4D;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -15px;
+}
+.option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #4D4D4D;
+  color: #fff;
+  padding: 10rpx;
+  text-align:center;
+}
+.searchInput{
+  background-color: #EDEDED;
+  height: 100%;
+  width: 75%;
+  border-bottom-right-radius:2rem;
+  border-top-right-radius: 2rem;
+  font-size: 30rpx;
+}
+.toSearch,.returnPage{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 35rpx;
+}
+
+.searchHistory{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border-bottom: 1px solid #EDEDED; 
+}
+.historyTop{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.historyTxt{
+  font-size: 35rpx;
+}
+.historyRecord{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 14rem;
+  overflow:hidden;
+}
+.historyItem{
+  width: auto;
+  height: auto;
+   /* word-break: break-all;  //输入文字溢出换行   */
+  margin: 0.2rem;
+  background-color: #F5F5F5;
+  border-radius: 1rem;
+  padding: 0.3rem;
+}
+
+.hotSearch{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  box-sizing: border-box;   
+  width: 100%;
+}
+.hotTop{
+  margin-bottom: 0.5rem;
+}
+.hotList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.hotItem{
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+  margin-bottom:0.2rem; 
+}
+.hotItemIndex{
+  width: 15%;
+  background-color: #8A8A8A;
+  border-bottom-left-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+  text-align:center;
+  color: white;
+}
+.hotItem:first-child .hotItemIndex{
+  background-color: red;
+}
+.hotItem:nth-child(2) .hotItemIndex{
+  background-color: orangered;
+}
+.hotItem:nth-child(3) .hotItemIndex{
+  background-color: orange;
+}
+.hotItemName{
+  background-color: #EDEDED;
+  width: 85%;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  padding-left: 0.3rem;
+}

@@ -1,0 +1,14 @@
+<view class="programDetail">
+  <view class="detailSome">
+    <image src="{{movie.images.large}}"></image>
+    <view class="movieContent">
+      <text class="moveName">{{movie.title}}\n</text>
+      <text>类型：{{movie.genres}}\n</text>
+      <text>上映日期：{{movie.pubdate}}\n</text>
+    </view>
+  </view>
+  <view class="contentDetail">
+    <text class="detailTitle">剧情简介\n</text>
+    <text class="detailSummary">{{movie.summary}}\n</text>
+  </view>
+</view>

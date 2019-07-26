@@ -1,0 +1,90 @@
+/* ::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+} */
+page{
+  background-color: #EDEDED;
+  height: 100%;
+  width: 100%;
+}
+.mine{
+  background-color: #EDEDED;
+  display: flex;
+  flex-direction:column;
+  height: 100%;
+  width: 100%;
+}
+.userinfo {
+  position: relative;
+  height: 30%;
+  overflow: hidden;
+}
+image.backImg{
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  position:absolute;
+  filter:blur(14px);
+}
+.userAvaandName{
+  position: absolute;
+  top: 50%;
+  left: 50%;	
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.operation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  height: 15%;
+}
+.order,.history,.collect{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoList{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1%;
+  height: 55%;
+}
+.scoreRect,.subscribeRect{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 3rem;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-bottom: 1px solid #EDEDED;
+}
+.score,.subscribe{
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

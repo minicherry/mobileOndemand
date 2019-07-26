@@ -1,0 +1,7 @@
+{
+
+  "usingComponents": {
+    "remoteControllerS": "../../components/remoteControllerS/remoteControllerS"
+  }
+
+}

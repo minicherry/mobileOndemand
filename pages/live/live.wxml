@@ -1,0 +1,52 @@
+<view class="live">
+
+  <view class="searchRect">
+    <view class="search">
+      <view class="fa fa-search"></view>
+      <input class="searchInput" disabled placeholder="热播搜索" bindtap="gotoSearch"></input>
+    </view>
+  </view>
+
+
+  <view class="program">
+    <view class="channelList">
+      <view class="channel" wx:for="{{channelList}}">
+        <view class="{{index==channelId?'channelSelect':'channelNot'}}" bindtap='goChannelIndex' data-index="{{index}}">{{item}}</view>
+      </view>
+    </view>
+
+    <view class="weekdayList">
+      <view class="weekDaysList">
+        <view class="weekDays" wx:for="{{weekDays}}">
+          <view class="{{index==weekDayId?'weekDaySelect':'weekDayNot'}}" bindtap='goweekDateIndex' data-index="{{index}}">{{item}}</view>
+        </view>
+      </view>
+      <view class="weekDateList">
+        <view class="weekDate" wx:for="{{weekDate}}">
+          <view class="{{index==weekDateId?'weekDateSelect':'weekDateNot'}}" bindtap='goweekDateIndex' data-index="{{index}}">{{item}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="someProgram">
+      <view class="TVStationList">
+        <view wx:for="{{TVStationList}}" class="{{index==TVStationId?'TVStationSelect':'TVStationNot'}}" bindtap='goTVStationIndex' data-name="{{item.channelName}}" data-index="{{index}}">
+          <image src='../../icon/tabBar/live.png'></image>
+          <view>{{item.channelName}}</view>
+        </view>
+      </view>
+      <view class="programList">
+        <view class="programSelect" wx:for="{{programList}}" wx:if="{{item.cName==TVStationName}}" data-cname="{{item.cName}}">
+          <view class="timeSlide">
+            <view class="fa fa-dot-circle-o"></view>
+            <view class="timeLine"></view>
+          </view>
+          <view class="programTime">{{item.time}}</view>
+          <view class="programMess">
+            <text class="programName">{{item.pName}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

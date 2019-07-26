@@ -1,0 +1,32 @@
+ <movable-area class="remoteControlS"> 
+  <movable-view direction="vertical" class="remoteBotton" bindtap="change" x="650" y="300" out-of-bounds="true">
+    <view class="fa fa-hand-paper-o fa-2x"></view>
+  </movable-view>
+  <view wx:if="{{remoteControFlag}}" class="remoteControl"> 
+    <view class="pageTop">
+      <view class="fa fa-volume-down fa-2x"></view>
+      <view class="fa fa-home"></view>
+      <view class="fa fa-volume-up fa-2x"></view>
+    </view> 
+
+    <view class="pageButton">
+      <view class="topandBottom">
+        <view class="quartercircle divTop"><a></a></view>
+        <view class="quartercircle divBottom"><a></a></view>
+      </view>
+      <view class="leftandRight">
+        <view class="quartercircle divLeft"><a></a></view>
+        <view class="quartercircle divRight"><a></a></view>
+      </view>
+      <view class="circleRect">
+        <view class="circle"><span style="">OK</span></view>
+      </view>
+    </view>
+
+    <view class="pageBottom">
+      <view class="fa fa-list-ul"></view>
+      <view class="fa fa-exchange fa-2x" bindtap="goRemoteController"></view>
+      <view class="fa fa-reply"></view>
+    </view> 
+  </view>
+</movable-area>

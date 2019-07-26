@@ -1,0 +1,44 @@
+<view class="onDemand">
+  <view class="searchRect">
+    <view class="search">
+      <view class="fa fa-search"></view>
+      <input class="searchInput" disabled placeholder="热播搜索" bindtap="gotoSearch"></input>
+    </view>
+  </view>
+  <view class="programSelect">
+    <view class="selectList">
+      <view class="progarmTypeList">
+        <view class="progarmType" wx:for="{{progarmType}}">
+          <view class="{{index==progarmTypeId?'progarmTypeSelect':'progarmTypeNot'}}" bindtap='goProgarmTypeIndex' data-index="{{index}}">{{item}}</view>
+        </view>
+      </view>
+      <view class="someType">
+        <view class="regionList">
+          <view class="region" wx:for="{{region}}">
+            <view class="{{index==regionId?'regionSelect':'regionNot'}}" bindtap='goRegionIndex' data-index="{{index}}">{{item}}</view>
+          </view>
+        </view>        
+        <view class="genreList">
+          <view class="genre" wx:for="{{genre}}">
+            <view class="{{index==genreId?'genreSelect':'genreNot'}}" bindtap='goGenreIndex' data-index="{{index}}">{{item}}</view>
+          </view>
+        </view>
+        <view class="yearsList">
+          <view class="years" wx:for="{{years}}">
+            <view class="{{index==yearsId?'yearsSelect':'yearsNot'}}" bindtap='goYearsIndex' data-index="{{index}}">{{item}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="programList">
+      <navigator url="../programDetail/programDetail?id={{item.id}}" wx:for="{{movies}}" wx:key="{{item}}">
+        <view class="list" bindtap="gotoDetail">
+          <image src="{{item.images.small}}"></image>
+          <text class="movieName">{{item.title}}</text>
+        </view>
+      </navigator>
+    </view>
+
+  </view>
+</view>

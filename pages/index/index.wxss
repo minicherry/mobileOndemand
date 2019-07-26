@@ -1,0 +1,135 @@
+page{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.index{
+  background-color: white;
+  display: flex;
+  flex-direction:column;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.remoteControllerS{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.searchRect{
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
+.search{
+  width: 90%;
+  height: 50%;
+  background-color: #EDEDED;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  border-radius:0.5rem;
+  padding-left: 2%;
+}
+.searchIcon{
+  position: relative;
+  left: 0.3rem;
+  top:0.2rem;
+}
+.searchInput{
+  margin-left: 3%;
+}
+
+swiper {
+  width: 100%;
+  height: 35%;
+}
+.slide-image{
+  height: 100%;
+  width: 100%;
+}
+
+.videoType{
+  height: 55%;
+}
+.hotBroadcast,.hotRanking,.recommend{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom:1px solid #EDEDED;
+}
+.hotBroadcastText,.hotRankingText,.recommendText{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.hotBroadcastMore,.hotRankingMore,.recommendChange{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+
+.programList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+navigator{
+  width: 32%;
+}
+.list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.2rem;
+}
+image{
+  width: 240rpx;
+  height: 320rpx;
+}
+.movieName{
+  width: 100%;
+  font-size: 30rpx;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.hotBroadcastTV{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 320rpx;
+}
+.hotBroadcastTVMess{
+  width: 100%;
+  height: 50rpx;
+  background-color:white; 
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  opacity:.5;
+}
+.hotBroadcastTVText{
+  font-size: 30rpx;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}

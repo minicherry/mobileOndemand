@@ -1,0 +1,93 @@
+<view class="mine">
+  <view class="userinfo" >
+    <image class="backImg" style="background-image:url({{userInfo.avatarUrl}});"></image> 
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登陆 </button>
+    <view wx:else class="userAvaandName">
+      <image bindtap="gotoLogin" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  
+  <view class="operation">
+    <view class="order">
+      <view class="fa fa-television"></view>
+      <text>预约</text>
+    </view>
+    <view class="history">
+      <i class="fa fa-clock-o"></i>
+      <text>历史</text>
+    </view>
+    <view class="collect">
+      <view class="fa fa-star-o"></view>
+      <text>收藏</text>
+    </view>
+  </view>
+
+  <view class="infoList">
+    <scroll-view scroll-y style="height: 100%;">
+      <view class="scoreRect">
+        <view class="fa fa-check-square-o"></view>
+        <view class="score">
+          <text>我的积分</text>
+          <view class="fa fa-angle-right"></view>
+        </view>
+      </view>
+
+      <view class="subscribeRect">
+        <view class="fa fa-check-circle-o"></view>
+        <view class="subscribe">
+          <text>我的订购</text>
+          <view class="fa fa-angle-right"></view>
+        </view>
+      </view>
+
+      <view class="scoreRect">
+        <view class="fa fa-check-square-o"></view>
+        <view class="score">
+          <text>我的积分</text>
+          <view class="fa fa-angle-right"></view>
+        </view>
+      </view>
+
+      <view class="subscribeRect">
+        <view class="fa fa-check-circle-o"></view>
+        <view class="subscribe">
+          <text>我的订购</text>
+          <view class="fa fa-angle-right"></view>
+        </view>
+      </view>
+
+      <view class="scoreRect">
+        <view class="fa fa-check-square-o"></view>
+        <view class="score">
+          <text>我的积分</text>
+          <view class="fa fa-angle-right"></view>
+        </view>
+      </view>
+
+      <view class="subscribeRect">
+        <view class="fa fa-check-circle-o"></view>
+        <view class="subscribe">
+          <text>我的订购</text>
+          <view class="fa fa-angle-right"></view>
+        </view>
+      </view>
+      <view class="scoreRect">
+        <view class="fa fa-check-square-o"></view>
+        <view class="score">
+          <text>我的积分</text>
+          <view class="fa fa-angle-right"></view>
+        </view>
+      </view>
+
+      <view class="subscribeRect">
+        <view class="fa fa-check-circle-o"></view>
+        <view class="subscribe">
+          <text>我的订购</text>
+          <view class="fa fa-angle-right"></view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

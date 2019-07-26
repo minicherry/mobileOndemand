@@ -1,0 +1,36 @@
+/* pages/login/login.wxss */
+page{
+  background-color: #EDEDED;
+  height: 100%;
+  width: 100%;
+}
+.login{
+  background-color: #EDEDED;
+  display: flex;
+  flex-direction:column;
+  height: 100%;
+  width: 100%;
+}
+.nameandPassword{
+  margin-top: 5%;
+  display: flex;
+  flex-direction:column;
+  background-color: white;
+  height: 15%;
+}
+.nameandPassword input{
+  border-bottom: 1px solid #EDEDED;
+  height: 50%;
+  padding-left: 2%;
+}
+
+.loginButton{
+  margin-top: 10%;
+  width: 90%;
+  background-color: #ff8c00;
+  color: white;
+}
+.loginButton:active{
+  background-color: white;
+  color: black;
+}

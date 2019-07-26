@@ -1,0 +1,45 @@
+<view class="search">
+
+  <view class="searchTop">
+    <view class="inputSelect">
+      <view class="selectBox">
+        <view class="select" catchtap="selectTap">
+          <text class="selectText">{{selectData[index]}}</text>
+          <view wx:if="{{show==false}}" class="fa fa-sort-desc"></view> 
+          <view wx:else="{{show==true}}" class="fa fa-sort-asc"></view>         
+        </view>
+        <view class="optionBox" style="height:{{selectData.length>5?300:selectData.length*60}}rpx;display:{{show?'block':'none'}};">
+          <text class="option" style='{{index==selectData.length-1&&"border:0;"}}'  wx:for="{{selectData}}" wx:key="this" data-index="{{index}}" catchtap="optionTap">{{item}}</text>
+        </view>
+      </view>
+      <input class="searchInput" placeholder="请输入片名、主演或导演" bindinput="getSearchInput" value="{{searchInput}}"/>
+    </view>
+    <view class="returnPage" wx:if="{{!searchInput}}" bindtap="returnLastPage">取消</view>
+    <view class="toSearch" wx:if="{{searchInput}}" bindtap="searchSubmitFn">搜索</view>
+  </view>
+
+  <view class="searchHistory">
+    <view class="historyTop">
+      <view class="historyTxt">搜索历史</view>
+      <view class="fa fa-trash" bindtap="deleteHistory"></view>
+    </view>
+    <view class="historyRecord">
+      <block wx:for="{{searchRecord}}" wx:key="{{item}}">
+        <view class="historyItem" data-name="{{item}}" bindtap="turnSearch">{{item}}</view>
+      </block> 
+    </view>
+  </view>
+
+  <view class="hotSearch" wx:if="{{selectData[index]=='视频'}}">
+    <view class="hotTop">热门搜索</view>
+    <view class="hotList">
+      <block  wx:for="{{hotSearchData}}" wx:key="{{item}}">
+        <view class="hotItem">
+          <view class="hotItemIndex" data-index="{{index}}" data-name="{{item}}" bindtap="turnSearch">{{index+1}}</view>
+          <view class="hotItemName"  data-name="{{item}}" bindtap="turnSearch">{{item}}</view>
+        </view>
+      </block> 
+    </view>  
+  </view>
+
+</view>

@@ -1,0 +1,26 @@
+.programList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+navigator{
+  width: 32%;
+}
+.list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.2rem;
+}
+image{
+  width: 240rpx;
+  height: 320rpx;
+}
+.movieName{
+  width: 100%;
+  font-size: 30rpx;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}

@@ -1,0 +1,80 @@
+<view class="index">
+  <view class="remoteControllerS">
+     <remoteControllerS></remoteControllerS>
+  </view>
+  <view class="searchRect">
+    <view class="search">
+      <view class="fa fa-search"></view>
+      <input class="searchInput" disabled placeholder="热播搜索" bindtap="gotoSearch"></input>
+    </view>
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="videoType">
+    <view class="hotBroadcast">
+      <view class="hotBroadcastText" bindtap="gotoList">
+        <text>正在热播</text>
+        <view class="hotBroadcastMore">
+          <text>更多</text>
+          <view class="fa fa-angle-right"></view>
+        </view>
+      </view>
+      <view class="programList">
+        <navigator url="../programDetail/programDetail?id={{item.id}}" wx:for="{{movies}}" wx:key="{{item}}" wx:if="{{index<6}}">
+          <view class="list" bindtap="gotoDetail">
+            <view class="hotBroadcastTV">
+              <image src="{{item.images.small}}"></image>
+              <view class="hotBroadcastTVMess">
+                <text class="hotBroadcastTVText">{{item.title}}</text> 
+              </view>
+            </view>
+            <text class="movieName">{{item.title}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+
+    <view class="hotRanking">
+      <view class="hotRankingText"  bindtap="gotoList">
+        <text>热播排行</text>
+        <view class="hotRankingMore">
+          <text>更多</text>
+          <view class="fa fa-angle-right"></view>
+        </view>
+      </view>
+      <view class="programList">
+        <navigator url="../programDetail/programDetail?id={{item.id}}" wx:for="{{movies}}" wx:key="{{item}}" wx:if="{{index<6}}">
+          <view class="list" bindtap="gotoDetail">
+            <image src="{{item.images.small}}"></image>
+            <text class="movieName">{{item.title}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+
+    <view class="recommend">
+      <view class="recommendText">
+        <text>猜你喜欢</text>
+        <view class="recommendChange">
+          <view class="fa fa-refresh"></view>
+          <text>换一批</text>
+        </view>
+      </view>
+      <view class="programList">
+        <navigator url="../programDetail/programDetail?id={{item.id}}" wx:for="{{movies}}" wx:key="{{item}}" wx:if="{{index<6}}">
+          <view class="list" bindtap="gotoDetail">
+            <image src="{{item.images.small}}"></image>
+            <text class="movieName">{{item.title}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    
+  </view>
+</view>

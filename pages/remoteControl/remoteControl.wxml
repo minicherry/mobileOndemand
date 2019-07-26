@@ -1,0 +1,50 @@
+<view class="remoteControl">
+  
+  <view class="pageTop">
+    <view>
+      <view class="fa fa-home"></view>
+    </view>
+      <view class="fa fa-power-off"></view>
+  </view>  
+  <view class="pageButton" wx:if="{{pageButton}}">
+    <view class="topandBottom">
+      <view class="quartercircle divTop"><a></a></view>
+      <view class="quartercircle divBottom"><a></a></view>
+    </view>
+    <view class="leftandRight">
+      <view class="quartercircle divLeft"><a></a></view>
+      <view class="quartercircle divRight"><a></a></view>
+    </view>
+    <view class="circleRect">
+      <view class="circle"><span style="">OK</span></view>
+    </view>
+  </view>
+  <view class="digitButton" wx:if="{{!pageButton}}">
+    <view class="digitButtonEach" wx:key="key" wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
+      <view class="numberEach" id="{{index}}">{{item}}</view>
+    </view>  
+  </view>
+    
+  <view class="chooseOption">
+    <view class="fa fa-list-ul"></view>
+    <view class="chooseUse">
+      <view class="{{pageButton?'pressKeySelect':'pressKey'}}" catchtap="pressKeyChoose">按键</view>
+      <view class="{{!pageButton?'digitSelect':'digit'}}" catchtap="digitChoose">数字</view>
+    </view>
+    <view class="fa fa-reply"></view>
+  </view>
+
+  <view class="changeVolume">
+    <view class="reduceRect">
+      <view class="fa fa-minus"></view>
+    </view>
+    <view class="volumeRect" bindtap="voiceChange">
+      <image class="volumeOff" wx:if="{{voiceOff}}"
+        src="../../icon/remoteControl/volumeOff.png" ></image>
+      <image class="volume" wx:else src="../../icon/remoteControl/volume.png"  ></image>
+    </view>
+    <view class="addRect">
+      <view class="fa fa-plus"></view>
+    </view>      
+  </view> 
+</view>

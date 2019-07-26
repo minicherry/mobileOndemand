@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/index/index", 
+    "components/remoteControllerS/remoteControllerS",
+    "pages/programList/programList",
+    "pages/live/live",
+    "pages/onDemand/onDemand",
+    "pages/programDetail/programDetail",   
+    "pages/search/search",    
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/remoteControl/remoteControl",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#FF8C00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/tabBar/index.png",
+        "selectedIconPath": "icon/tabBar/indexSelected.png"
+      },
+      {
+        "pagePath": "pages/live/live",
+        "text": "直播",
+        "iconPath": "icon/tabBar/live.png",
+        "selectedIconPath": "icon/tabBar/liveSelected.png"
+      },
+      {
+        "pagePath": "pages/remoteControl/remoteControl",
+        "text": "遥控器",
+        "iconPath": "icon/tabBar/remoteControl.png",
+        "selectedIconPath": "icon/tabBar/remoteControlSelected.png"
+      },
+      {
+        "pagePath": "pages/onDemand/onDemand",
+        "text": "点播",
+        "iconPath": "icon/tabBar/onDemand.png",
+        "selectedIconPath": "icon/tabBar/onDemandSelected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/tabBar/mine.png",
+        "selectedIconPath": "icon/tabBar/mineSelected.png"
+      }
+    ]
+  }
+
+}

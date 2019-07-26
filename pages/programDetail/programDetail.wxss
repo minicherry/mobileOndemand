@@ -1,0 +1,44 @@
+page{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.programDetail{
+  background-color: white;
+  display: flex;
+  flex-direction:column;
+}
+
+.detailSome{
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem;
+}
+.detailSome image{
+  height: 600rpx;
+  width: 450rpx;
+  margin-right: 0.5rem;
+}
+.movieContent text{
+  margin-top: 0.2rem;
+  display: block;
+}
+.moveName{
+  font-size: 50rpx;
+}
+
+.contentDetail{
+  margin-top: 0.5rem;
+  border-top: 1px solid #EDEDED; 
+}
+.detailTitle{
+  display: block;
+  margin:0.5rem;
+  font-size: 30rpx;
+  color: #8B8682;
+}
+.detailSummary{
+  display: block;
+  margin:0.5rem;
+  text-indent:25px;
+}
