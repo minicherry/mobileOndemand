@@ -15,7 +15,7 @@
 ### 直播页面
 ![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E7%9B%B4%E6%92%AD%E9%A1%B5%E9%9D%A2.jpg)
 ### 节目列表页面
-![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E8%8A%82%E7%9B%AE%E5%88%97%E8%A1%A8%E9%A1%B5%E9%9D%A2.jpg)
+![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E8%8A%82%E7%9B%AE%E5%88%97%E8%A1%A8Data.jpg)
 ### 历史纪录页面
 ![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E5%8E%86%E5%8F%B2%E7%BA%AA%E5%BD%95%E9%A1%B5%E9%9D%A2.jpg)
 ### 登录页面
