@@ -5,11 +5,13 @@
 ## 页面展示
 
 ### 首页面
-![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E9%A6%96%E9%A1%B5.jpg)
+![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E9%A6%96%E9%A1%B5Data.jpg)
+### 遥控器组件
+![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E9%81%A5%E6%8E%A7%E5%99%A8%E7%BB%84%E4%BB%B6.jpg)
 ### 我的页面
 ![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E6%88%91%E7%9A%84%E9%A1%B5%E9%9D%A2.jpg)
 ### 点播页面
-![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E7%82%B9%E6%92%AD%E9%A1%B5%E9%9D%A2.jpg)
+![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E7%82%B9%E6%92%ADData.jpg)
 ### 直播页面
 ![image](https://github.com/minicherry/mobileOndemand/blob/master/images/%E7%9B%B4%E6%92%AD%E9%A1%B5%E9%9D%A2.jpg)
 ### 节目列表页面
